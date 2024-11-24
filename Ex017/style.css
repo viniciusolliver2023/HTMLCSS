@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to left,#e7c493, #F7DFBB, #F7DFBB, #e7c493);
+}
+
+main {
+    background-image: linear-gradient(to top, #fffdfb, #fffaf2);
+    width: 800px;
+    margin: auto;
+    height: 990px;
+    box-shadow: 3px 0px 10px #00000020;
+}
+
+#titulo {
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff950015;
+}
+
+header {
+    padding: 15px 0px 15px 15px;
+    background-color: #d2d2d2;
+}
+
+time, address {
+    display: block;
+    text-align: start;
+    font-size: 12px;
+}
+
+span {
+    display: block;
+    padding: 0px 0px 10px 0px;
+}
+
+#autor {
+    display: block;
+    padding: 30px 0px 0px 0px;
+}
+
+.carta, .remetente {
+    margin: 5px 0px 0px 15px;
+}
+
+.remetente {
+    padding: 0px 0px 50px 0px;;
+}

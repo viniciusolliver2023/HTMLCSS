@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format("opentype");
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor01: #89CDA5;
+    --cor02: #78efad;
+    --cor03: #144228;
+    --fontedestaque: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: var(--cor01);
+}
+
+header {
+    width: 100%;
+    min-height: 250px;
+    background-image: linear-gradient(var(--cor02), var(--cor03));
+    color: white;
+}
+
+header > h1 {
+    font-family:'Bebas Neue';
+    text-align: center;
+    padding-top: 40px;
+    font-size: 3rem;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.489);
+    margin-bottom: 20px;
+}
+
+header > p {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0px auto 65px auto;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.489);
+}
+
+strong {
+    color: var(--cor03);
+}
+
+span {
+    background-color: var(--cor02);
+    font-weight: bold;
+    color: var(--cor03);
+    padding: 3px 6px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 20px 10px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor03);
+    background-color: var(--cor02);
+    padding: 3px 6px;
+}
+
+a.externo::after {
+    content: '\1F517';
+}
+
+a:hover {
+    background-color: var(--cor02);
+}
+
+main {
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    margin: 0px auto;
+    border-radius: 0px 0px 30px 30px;
+    padding: 15px;
+    
+}
+
+main > h1 {
+    font-family: "Android", sans-serif;
+    text-align: center;
+    color: var(--cor03);
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+main > h2 {
+    font-family: "Android", sans-serif;
+    color: var(--cor03);
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 15px 0px 0px 15px;
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+}
+
+main p {
+    line-height: 1.8rem;
+    text-indent: 2rem;
+    font-family: sans-serif;
+}
+
+main img {
+    width: 100%;
+}
+
+#bugdroid {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor03);
+    margin: 0px -15px;
+    padding: 0px 20px;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+div > iframe {
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    right: 10%;
+    left: 10%;
+    width: 80%;
+    height: 89%;
+}
+
+aside {
+    background-color: var(--cor02);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+
+aside > h3 {
+    background-color: #144228;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    margin: -10px -10px 0px -10px;
+    color: white;
+}
+
+aside > ul {
+    max-width: 900px;
+    margin: 10px auto;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+    list-style-position: inside;
+}
+
+footer {
+    background-color: var(--cor03);
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+}

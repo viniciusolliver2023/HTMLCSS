@@ -1,0 +1,79 @@
+\<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Imagens, áudios e vídeos!</title>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Imagens adaptativas...</h1>
+            <p>
+                As imagens adaptativas servem para se adaptar a diferentes telas
+                <br>
+                de dispositivos sejam móveis ou não.
+            </p>
+        </header>
+            <picture>
+                <source media="(min-width: 980px)" srcset="image/g.png" type="image/png">
+                <source media="(min-width: 800px)" srcset="image/m.png" type="image/png">
+                <img src="image/p.png" alt="imagem pequena">
+            </picture>
+        
+        <hr>
+    </section>
+    <section>
+        <header>
+            <h1>Vídeos de diferentes formatos...</h1>
+            <p>
+                Podemos colocar diferentes vídeos de acordo com a compatibilidade do
+                <br>
+                seu navegador.
+            </p>
+        </header>
+        <video controls width="450px" height="450px">
+            <source src="video/video.mp4" type="video/mp4">
+            <source>
+        </video>
+        <hr>
+    </section>
+    <section>
+        <header>
+            <h1>Diferentes áudios...</h1>
+            <p>
+                No navegador, assim como os vídeos e imagens, podemos colocar 
+                <br>
+                diferentes formatos de áudios de acordo com a compatibilidade.
+            </p>
+        </header>
+        <audio controls>
+            <source src="audio/audio.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <section>
+        <header>
+            <h1>Downloads...</h1>
+            <p>
+                Para despertar a função download é bem simples.
+                <br>
+                Só é necessário usar um plug-in no VScode chamado <cite>live server</cite>.
+            </p>
+        </header>
+        <ul>
+            <li>
+                <a href="image/g.png" type="image/png" download="gato-grande">Imagem</a>
+            </li>
+            <li>
+                <a href="audio/audio.mp3" type="audio/mpeg" download="audio">Áudio</a>
+            </li>
+            <li>
+                <a href="video/video.mp4" type="video/mp4" download="Wanessa">Vídeo</a>
+            </li>
+        </ul>
+        <p>
+            OBS.: Isso só pode ser usado na função <cite>Live server</cite>.
+        </p>
+    </section>
+</body>
+</html>

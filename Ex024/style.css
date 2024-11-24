@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+}
+
+a::before {
+    content:'link';
+}

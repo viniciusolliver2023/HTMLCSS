@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(50, 50, 50);
+}
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.video-css {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    display: flex;
+    margin: auto;
+    border: none;
+}
+
+button img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Exercício 003</title>
+</head>
+<body>
+	<h1>Quebras</h1>
+	<p>
+		Um texto comum em HTML consome toda sua linha, independe se toda linha for preenchida ou não.
+		<br/>
+		<img title="pequena sereia" src="imagem.jpg" alt="desenho da pequena sereia" align="left"/>
+		Isso é devido a natureza das tags. Uma tag pode ser <em>inline</em> ou <em>block</em>.
+	</p>
+	<p>
+		Uma tag inline funciona ocupando somente o conteúdo necessário na tela.
+		<br/>
+		Isso significa que se houver uma outra tag inline logo após, ficará ao lado, 
+		<br/>
+		não abaixo.
+	</p>
+	<p>
+		Já uma tag block ocupa todo o espaço de uma linha. Por exemplo, a tag &lt;p&gt;
+		<br/>
+		funciona como uma tag de block pois quando colocada após a outra, uma fica acima
+		<br/>
+		e outra fica abaixo. Sendo assim, ela ocupa todo o espaço da tela.
+	</p>
+	<p>
+		O exemplo claro é a imagem que está no meio do texto. Em um caso comum, sem
+		<br/>
+		parâmetros, o texto "vazaria" para fora da imagem, seguindo como se fosse um fluxo
+		<br/>
+		de tag block, pois seu pai é a tag &lt;p&gt;.
+	</p>
+	<p>
+		A tag &lt;img&gt; é uma tag inline. Significa que ela ocupa somente o espaço
+		<br/>
+		necessário na renderização do navegador. Porém, ao adicionarmos o parâmetro
+		<br/>
+		<em>align="left"</em>, ela torna um objeto flutuante na página. Isso significa
+		<br/>
+		que ela sobrepõe as tags abaixo, se tornando um objeto a esquerda do navegador.
+	</p>
+</body>
+</html>

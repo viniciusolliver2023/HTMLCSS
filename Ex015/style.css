@@ -1,0 +1,17 @@
+* {
+}
+
+body {
+    background-image: linear-gradient(to right, #00aaff, #61ffca, #8243ff%);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: hsl(359, 100%, 80%);
+}
+
+div {
+
+    height: 50px;
+    width: 250px;
+}

@@ -1,0 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #111122;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-image: linear-gradient(to left,
+    white 25%,
+    black 25%,
+    black 75%,
+    white 75%);
+    width: 500px;
+    height: 500px;
+}

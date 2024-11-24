@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cores</title>
+</head>
+<body>
+    <h1>Cores e suas representações...</h1>
+    <hr>
+    <p>
+        Podemos representar cores de três formas, RGB, hexadecimal e HLS. Todas elas chegando no mesmo resultado porém com finalidades específicas.
+    </p>
+    <h2>RGB</h2>
+    <p>
+        Em RGB, assim como os outros, definimos a quantidade de vermelho, verde e azul da cor que queremos formar. A fórmula fica assim: rgb(000, 000, 000, 000)
+        <br>
+        Podemos inserir números de 0 até 255. Sendo 0 o mais escuro e 255 o mais puro. O primeiro trio de zeros é para definir o vermelho, o segundo verde e o terceiro
+        <br>
+        azul. O quarto serve para definir a opacidade da cor, a transparência.
+    </p>
+    <h2>Hexadecimal</h2>
+    <p>
+        Em código hexadecimal temos a fórmula de: &quot;#000000&quot;. Em hexadecimal, diferente do nosso sistema, de dez algarimos. No sistema hexadecimal
+        <br>
+        temos algarismos de 0 até F (sim, nesse caso letras são algarismos). Pelo o que compreendi, números e letras trabalham com valores diferentes. As
+        <br>
+        letras trabalham com valores claros/saturados; números trabalham com valores escuros/menos saturados. Por exemplo:
+    </p>
+    <p>
+        #ff0000 = vermelho saturado
+        <br>
+        #00ff00 = verde saturado
+        <br>
+        #0000ff = azul saturado
+        <br>
+        #000000 = preto
+        <br>
+        #FFFFFF = branco
+        <br>
+        #111111 = cinza escuro (se os valores forem iguais, porém diferentes de #000000 ou #ffffff. O resultado será sempre cinza em maior ou menor escala).
+        <br>
+        #ffaaaa = vermelho claro (quando dois algarismos responsáveis por uma cor estão juntos num mesmo valor, atuam como um equilibrio de luminosidade para o terceiro valor saturado)
+        <br>
+        #11ff11 = verde escuro
+        <br>
+        #22ee00 = verde quase saturado
+    </p>
+    <p>
+        Se quisermos escolher uma cor primária (vermelho, verde ou azul). Temos que colocá-la na saturação máxima (ou seja, valores em letras a até f).
+        <br>
+        E para adicionar maior claridade trabalhamos com valores parecidos as outras cores primárias, por exemplo: #ffaaaa resultará em vermelho claro
+        <br>
+        pois o verde e azul estão trabalhando em claridade.
+        <br>
+        Já se quisermos trabalhar com  escuridão, temos que modificar a letra ou número da primeira fileira, por exemplo: #3f0000 resultará em um vermelho bem escuro, pois o primeiro algarismo representa a dezena.
+    </p>
+    <p>
+        É importante lembrar que <strong>SEMPRE</strong> que quisermos modificar a saturação/claridade de uma cor primária os outros dois valores serão iguais. Por exemplo:
+        <br>
+        - #ffaaaa = resultará em vermelho claro pois estamos modificando a cor do verde e do azul para que ambas sejam iguais.
+    </p>
+    <h2>HLS</h2>
+    <p>
+        Trabalha com tom, saturação e luminosidade. Por exemplo, tons de azul estão entre 200 até 240 aproximadamente. Escolhendo o tom, podemos alterar a saturação e luminosidade através da porcentagem (o quão saturado quer ou luminoso quer).
+        <br>
+        Dessa forma, podemos trabalhar melhor com o próprio design das cores. É ideal para quem quer trabalhar com sites de forma artística.
+    </p>
+    <h2>Degradê</h2>
+    <div></div>
+</body>
+</html>

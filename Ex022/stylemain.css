@@ -1,0 +1,85 @@
+@charset "UTF-8";
+    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cordestaque01: #4B334A;
+    --cordestaque02: #4C475E;
+    --cormain:  linear-gradient(to bottom, #ff5555, #e4705e);
+    font-size: 62.5%;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    height: 75%;
+    width: 100%;
+    position: fixed;
+    background-image: var(--cormain);
+}
+
+.pai {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.direito, .esquerdo{
+    height: 100%;
+    width: 33.3%;
+}
+
+#logo-esquerda {
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 1200px;
+}
+
+#separador2 {
+    margin: 0px 15px 0px 15px;
+    width: 2px;
+    height: 50%;
+    background-color: var(--cordestaque01);
+}
+
+.texto {
+    color: var(--cordestaque01);
+}
+
+.texto > strong {
+    font-weight: 800;
+}
+
+#container-texto-pagina {
+    max-width: 600px;
+    min-width: 300px;
+    max-height: 600px;
+    min-height: 200px;
+}
+
+.titulo {
+    font: normal 500 7rem 'Lexend';
+    line-height: 7rem;
+}
+
+.paragrafo {
+    font: normal 300 4rem 'Lexend';
+    margin: 5% 0px 0px 0px;
+}

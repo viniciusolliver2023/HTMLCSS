@@ -1,0 +1,15 @@
+body {
+    font-family: "Playwrite PE";
+}
+
+#pai {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+
+#filho {
+    height: 50%;
+    width: 50%;
+    background-color: green;\
+}

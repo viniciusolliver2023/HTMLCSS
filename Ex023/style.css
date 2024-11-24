@@ -1,0 +1,21 @@
+.classe:hover {
+    background-color: red;
+}
+
+#id {
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+}
+ 
+.classe {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+}
+
+div {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}

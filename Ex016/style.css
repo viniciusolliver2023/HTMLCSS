@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'artpopregular';
+    src: url('fontes/artpop_byarmgermanotta-webfont.woff2') format('woff2'),
+         url('fontes/artpop_byarmgermanotta-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'artpopregular';
+}
+body {
+    background-image: linear-gradient(to bottom,#FFFFFF, #eeeeee, #c1c1c1);
+    background-attachment: fixed;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    background-image: linear-gradient(to left, #DF2693, #911149, #BC2467);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.caixa {
+    background-color: black;
+    width: 300px;
+    height: 100px;
+}
