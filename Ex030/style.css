@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    height: 35vh;
+}
+
+h1, p, a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-family: 'passion one', serif;
+    font-size: 8rem;
+    padding-top: 50px; 
+}
+
+h1::first-line {
+    font-size: 11rem;
+}
+
+a {
+    font-weight: bold;
+}
+
+pre {
+    font-family: "Sriracha", serif;
+    font-size: 4rem;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+#image1 {
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+    height: 120vh;
+    position: relative;
+}
+
+#image2 {
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+    position: relative;
+    height: 120vh;
+}
+
+.texto {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.274);
+    text-shadow: 1px 1px 1px black;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+}
