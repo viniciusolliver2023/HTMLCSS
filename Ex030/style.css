@@ -29,35 +29,19 @@ a {
     font-weight: bold;
 }
 
-pre {
-    font-family: "Sriracha", serif;
-    font-size: 4vw;
-    margin-top: 100px;
-    margin-left: 50px;
+section {
+
 }
 
 #image1 {
     background-image: url(imagens/background001.jpg);
     background-attachment: fixed;
-    height: 100vh;
-    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
-#image2 {
-    background-image: url(imagens/background002.jpg);
-    background-attachment: fixed;
-    position: relative;
-    height: 120vh;
-}
 
-.texto {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.274);
-    text-shadow: 1px 1px 1px black;
-}
 
 footer {
     background-color: black;
