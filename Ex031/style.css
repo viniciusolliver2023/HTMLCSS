@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fontetexto: "Sriracha", sans-serif;
+}
+
+header {
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header > h1, p {
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: 'passion one', serif;
+    font-size: 10vw;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+header > p {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+span {
+    font-weight: 600;
+}
+
+section {
+    margin-top: 15%;
+}
+
+section > pre {
+    font-family: var(--fontetexto);
+    font-size: 3.5vw;
+    margin-left: 15px;
+}
+
+section[id] {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.481);
+}
+
+section[id] > pre {
+    background-color: rgba(0, 0, 0, 0.481);
+    display: inline-block;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#image01 {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+#image02 {
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
