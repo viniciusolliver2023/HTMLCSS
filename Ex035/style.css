@@ -1,0 +1,46 @@
+table {
+    border-collapse: collapse;
+            
+}
+
+thead {
+    background-color: rgb(229, 229, 229);
+}
+
+tbody {
+    counter-reset: (contador);
+}
+
+tr {
+    counter-increment: contador;
+}
+
+tbody > tr:hover {
+    background-color: rgb(232, 255, 255);
+}
+
+th, td {
+    
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+
+td:first-child::before {
+    content: counter(contador);
+    display: table-cell;
+    
+    
+}
+
+tfoot {
+    background-color: rgb(229, 229, 229);
+}
+
+#footer-table:first-child::before  {
+    content: none;
+}
+
+
+
