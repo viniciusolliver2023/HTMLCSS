@@ -4,19 +4,23 @@ table {
 }
 
 thead {
-    background-color: rgb(229, 229, 229);
+    background-color: rgb(139, 139, 139);
+    color: white;
+    position: sticky;
+    top: 0%;
 }
 
 tbody {
     counter-reset: (contador);
 }
 
-tr {
-    counter-increment: contador;
+tfoot {
+    background-color: rgb(139, 139, 139);
+    color: white;
 }
 
-tbody > tr:hover {
-    background-color: rgb(232, 255, 255);
+tr {
+    counter-increment: contador;
 }
 
 th, td {
@@ -26,16 +30,21 @@ th, td {
 
 }
 
+tbody > tr:nth-child(2n) {
+    background-color: rgb(208, 208, 208);
+
+}
+
+tbody > tr:hover {
+    background-color: rgb(232, 255, 255);
+}
+
 
 td:first-child::before {
     content: counter(contador);
     display: table-cell;
     
     
-}
-
-tfoot {
-    background-color: rgb(229, 229, 229);
 }
 
 #footer-table:first-child::before  {
