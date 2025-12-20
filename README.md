@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -7,5 +6,6 @@
 </head>
 <body>
     <h1>Exercícios do Guanabara</h1>
+    <a href="Ex001/index.html">001</a>
 </body>
 </html>
