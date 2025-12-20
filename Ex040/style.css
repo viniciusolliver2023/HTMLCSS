@@ -1,0 +1,82 @@
+body {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    background-color: white;
+    width: 40%;
+    overflow-x: auto;
+
+    table {
+        border-collapse: collapse;
+        height: 150px;
+        width: 200px;
+
+        thead {
+            background-color: rgb(243, 243, 243);
+        }
+
+        th, td {
+            border: 1px solid rgb(130, 130, 130);
+            padding: 10px;
+        }
+
+        tr > td {
+            border: 1px solid rgb(130, 130, 130);
+            text-align: center;
+        }
+
+        td.avaliacao-bom {
+            background-color:rgb(196, 228, 255);
+        }
+
+        td.avaliacao-flop {
+            background-color: rgb(255, 105, 91);
+            font-weight: bold;
+        }
+
+        td.avaliacao-finalista {
+            background-color: rgb(127, 255, 131);
+            font-weight: bold;
+        }
+
+        td#avaliacao-vencedora {
+            background-color: rgb(255, 238, 0);
+            font-weight: bold;
+        }
+
+        td.avaliacao-ruim {
+            background-color: rgb(255, 151, 151);
+        }
+
+        td.avaliacao-eliminada {
+            background-color: rgb(255, 0, 0);
+            font-weight: bold;
+        }
+
+        td.avaliacao-venceu {
+            background-color:rgb(98, 137, 255);
+            color: white;
+            font-weight: bold;
+        }
+
+        td#avaliacao-vice {
+            background-color: rgb(219, 219, 219);
+            font-weight: bold;
+        }
+        td#avaliacao-miss {
+            background-color:aqua;
+            font-weight: bold;
+        }
+
+        td.convidada {
+            background-color: rgb(228, 228, 228);
+        }
+
+        td.sem-categoria {
+            background-color: rgb(189, 189, 189);
+        }
+    }
+}

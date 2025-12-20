@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    overflow-x: hidden;
+    scrollbar-width: none;
+    width: 100%;
+
+    div {
+        display: inline-grid;
+        justify-items: stretch;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+button {
+    border-style: none;
+    width: 100%;
+    background-color: rgb(112, 0, 0);
+    height: 50px;
+    &:hover {
+        background-color: red;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

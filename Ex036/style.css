@@ -1,0 +1,62 @@
+table, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    counter-reset: linhanumero;
+
+    thead {
+        position: sticky;
+        top: 0%;
+    }
+
+    thead > tr {
+        background-color: rgb(178, 178, 178);
+        height: 50px;
+        &::before {
+            content: "";
+        }
+    }
+
+    th {
+        border: 1px solid #000000;
+    }
+
+    img {
+        height: 15px;
+    }
+
+    tbody > tr {
+        border: 1px solid black;
+        counter-increment: linhanumero;
+        background-color: rgb(235, 235, 235);
+        &:hover {
+            background-color: rgb(222, 255, 255);
+        }
+        &::before {
+            content: counter(linhanumero);
+            background-color: rgb(178, 178, 178);
+            padding: 0 1rem;     
+            vertical-align: inherit;
+            display: table-cell;
+        }
+    }
+
+    tbody > tr > td {
+        padding: 10px;
+    }
+
+    tfoot > tr {
+        height: 50px;
+        background-color: rgb(178, 178, 178);
+        &::before {
+            content: "";
+        }
+    }
+
+    tfoot > tr > td {
+        padding: 10px;
+    }
+
+    .number-right {
+        text-align: right;
+    }
+}
