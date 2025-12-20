@@ -6,6 +6,6 @@
 </head>
 <body>
     <h1>Exercícios do Guanabara</h1>
-    <a href="Ex001/index.html">001</a>
+    <a href="index.html">Principal</a>
 </body>
 </html>
