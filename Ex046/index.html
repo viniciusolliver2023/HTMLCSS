@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div id="form_container">
+        <form action="cadastro.php" metod="post" autocomplete="off">
+            <fielset>
+                <legend>Login</legend>
+                <div class="user-senha">
+                    <label for="email">E-mail</label>
+                    <br>
+                    <div class="icon-placeholder">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="email" name="email" id="email" placeholder="Digite o e-mail" required>
+                    </div>
+                </div>
+                <div class="user-senha">
+                    <label for="senha">Senha</label>
+                    <br>
+                    <div class="icon-placeholder">
+                        <i class="fa fa-key" aria-hidden="true"></i><input type="password" name="senha" id="senha" placeholder="Digite a Senha" required>
+                    </div>
+                    <div id="forget-password">
+                        <a href="#" target="_self">Esqueceu a Senha?</a>
+                    </div>
+                </div>
+                <button type="submit" id="login-button">Fazer Login</button>
+            </fielset>
+        </form>
+        <p>Ou tente logando com:</p>
+        <div id="redes-login">
+            <a href="#" class="google logo">
+                <img alt="logotipo do google" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-white-icon.png">
+            </a>
+            <a href="#" class="facebook logo">
+                <img  alt="logotipo do facebook" src="https://clipart.info/images/ccovers/1509135360facebook-logo-png-white.png">
+            </a>
+            <a href="#" class="twitter logo">
+                <img  alt="logotipo do twitter" src="https://www.iconsdb.com/icons/preview/white/twitter-xxl.png">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
