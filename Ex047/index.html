@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Formulário - Home</title>
+</head>
+<body>
+    <div id="design-background">
+        <div class="bubble um"></div>
+        <div class="bubble dois"></div>
+        <div class="bubble tres"></div>
+        <div class="bubble quatro"></div>
+    </div>
+    <div id="form-container">
+        <div id="form-container-back">
+            <form id="form-sing" action="pags/cadastro.html" method="post">
+                <fieldset id="fielset-sing">
+                    <legend><p>INSCREVA-SE</p></legend>
+                    <div class="container-input-back">
+                        <label for="email-sing">E-mail</label>
+                        <input type="email" name="email-sing" id="email-sing" placeholder="Insira um e-mail">
+                    </div>
+                    <div class="container-input-back">
+                        <label for="user-sing">Usuário</label>
+                        <input type="text" name="user-sing" id="user-sing" placeholder="Crie um usuário">
+                    </div>
+                    <div class="container-input-back">
+                        <label for="password-sing">Senha</label>
+                        <input type="password" name="password-sing" id="password-sing" placeholder="Crie uma senha">
+                    </div>
+                    <button class="simsim" type="submit">Cadastre-se</button>
+                </fieldset>
+            </form>
+        </div>
+        <div id="form-front">
+            <form id="form-login" action="pags/login.html" method="post" autocomplete="off">
+                <fielset>
+                    <legend>LOGIN</legend>
+                    <div class="user cointainer-input">
+                        <label for="userlabel">Usuário</label>
+                        <br>
+                        <input type="text" name="userlabel" id="userlabel" placeholder="Digite seu usuário" required>
+                    </div>
+                    <div class="pass cointainer-input">
+                        <label for="passwordlabel">Senha</label>
+                        <br>
+                        <input type="password" name="passwordlabel" id="passwordlabel" placeholder="Digite sua senha" required>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <button id="button-submit" type="submit">Fazer Login</button>
+                    <p>Ou pode tentar usando:</p>
+                    <div id="redes-login">
+                        <a href="#" class="redes google">
+                            <i class="fa-brands fa-google" alt="lotoipo do google"></i>
+                        </a>
+                        <a href="#" class="redes facebook">
+                            <i class="fa-brands fa-facebook-f" alt="lotoipo do facebook"></i>
+                        </a>
+                        <a href="#" class="redes twitter">
+                            <i class="fa-brands fa-twitter" alt="lotoipo do twitter"></i>
+                        </a>
+                    </div>
+                </fielset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
