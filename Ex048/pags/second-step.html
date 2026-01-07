@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style-step-one.css">
+    <title>Formulário: Etapa dois</title>
+</head>
+<body>
+    <main>
+        <section id="section-main">
+            <section class="section step-sec">
+                <div id="line-step-progression"></div>
+                <div id="line-step">
+                    <div class="div-step um">
+                        <span class="number-step">1</span>
+                    </div>
+                    <div class="div-step dois">
+                        <span class="number-step">2</span>
+                    </div>
+                    <div class="div-step tres">
+                        <span class="number-step">3</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section form-sec">
+                <form id="form-sing" action="third-step.html" method="get">
+                    <fieldset>
+                        <legend>
+                            <h1>INFORME SEUS DADOS</h1>
+                        </legend>
+                        <p>Esta é a etapa dois</p>
+                        <div class="container-input">
+                            <input type="text" name="label-text" id="label-text" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="container-input">
+                            <input type="date" name="label-date" id="label-date" placeholder="Digite seu E-mail" required>
+                        </div>
+                        <div class="container-input">
+                            <select name="sexo" id="id-sexo" required>
+                                <option value="" disabled selected>Selecione o gênero</option>
+                                <option value="woman">Mulher</option>
+                                <option value="Homem">Homem</option>
+                            </select>
+                        </div>
+                        <div class="container-button">
+                            <button type="button"><a href="../index.html" target="_self">Anterior</a></button>
+                            <button type="button"><a href="third-step.html" target="_self">Próximo</a></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

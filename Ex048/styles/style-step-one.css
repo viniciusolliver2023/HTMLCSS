@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url(../style-main.css) layer(antigo-2);
+@layer novo-2 {
+
+    button {
+        position: none;
+        left: 0;
+        transform: none;
+    }
+}
+
+& .step-sec {
+    position: relative;
+    max-width: 95vw;
+    left: 50%;
+    transform: translate(-50%);
+    aspect-ratio: 12/1;
+
+        & #line-step-progression {
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            width: 100%;
+            height: 10px;
+            background-image: linear-gradient(to right, var(--colorgreen) 50%, white 50%);
+            z-index: -1;
+            
+        }
+        
+        & #line-step {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+
+        & .div-step {
+            display: flex;
+            height: 100%;
+            aspect-ratio: 1/1;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow);
+            background-color: white;
+
+            & .number-step {
+                font: bolder 1.5rem var(--fontmain);
+            }
+
+            &.um {
+                background-color: var(--colorgreen);
+                color: white;
+            }
+
+            &.dois {
+                background-color: var(--colorgreen);
+                color: white;
+            }
+        }
+    }
+}
+
+
+div.container-button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+    }
+}
+

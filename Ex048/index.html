@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-main.css">
+    <title>Formulário: Etapa um</title>
+</head>
+<body>
+    <main>
+        <section id="section-main">
+            <section class="section step-sec">
+                <div id="line-step-progression"></div>
+                <div id="line-step">
+                    <div class="div-step um">
+                        <span class="number-step">1</span>
+                    </div>
+                    <div class="div-step dois">
+                        <span class="number-step">2</span>
+                    </div>
+                    <div class="div-step tres">
+                        <span class="number-step">3</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section form-sec">
+                <form id="form-sing" action="pags/second-step.html" method="post">
+                    <fieldset>
+                        <legend>
+                            <h1>CRIE SUA CONTA</h1>
+                        </legend>
+                        <p>Esta é a etapa um</p>
+                        <div class="container-input">
+                            <input type="email" name="label-email" id="label-email" placeholder="Digite seu E-mail" required>
+                        </div>
+                        <div class="container-input">
+                            <input type="password" name="label-password" id="label-password" minlenght="5" maxlength="20" placeholder="Crie uma senha" required>
+                        </div>
+                        <div class="container-input">
+                            <input type="password" name="label-password2" id="label-password2" minlength="5" maxlength="20" placeholder="Confirme sua senha" required>
+                        </div>
+                        <button type="submit"><a href="pags/second-step.html" target="_self">Próximo</a></button>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style-step-two.css">
+    <title>Formulário: Etapa dois</title>
+</head>
+<body>
+    <main>
+        <section id="section-main">
+            <section class="section step-sec">
+                <div id="line-step-progression"></div>
+                <div id="line-step">
+                    <div class="div-step um">
+                        <span class="number-step">1</span>
+                    </div>
+                    <div class="div-step dois">
+                        <span class="number-step">2</span>
+                    </div>
+                    <div class="div-step tres">
+                        <span class="number-step">3</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section form-sec">
+                <form id="form-sing" action="pags/second-step.html" method="post">
+                    <fieldset>
+                        <legend>
+                            <h1>FINALIZE O CADASTRO</h1>
+                        </legend>
+                        <p>Esta é a etapa dois</p>
+                        <div class="container-input">
+                            <input type="text" name="label-text" id="label-text" placeholder="Digite seu nome completo"
+                            required>
+                        </div>
+                        <div class="container-input">
+                            <input type="text" name="label-cpf" id="label-cpf" 
+                            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                            placeholder="Digite seu CPF (123.456.789.90)"
+                            maxlength="14"
+                            required>
+                        </div>
+                        <div class="container-input">
+                            <select>
+                                <option value="" disabled selected>Selecione um estado</option>
+                                <optgroup label="Região Sudeste">
+                                    <option value="SP">São Paulo</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="ES">Espírito Santo</option>
+                                </optgroup>
+                                <optgroup label="Região Sul">
+                                    <option value="PR">Paraná</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                </optgroup>
+                                <optgroup label="Região Nordeste">
+                                    <option value="AL">Alagoas</option>
+                                    <option value="BH">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="PB">Paraíba</option>
+                                </optgroup>
+                                <optgroup label="Região Norte">
+                                    <option value="AC">Acre</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                </optgroup>
+                                <optgroup label="Região Centro-Oeste">
+                                    <option value="GO">Goiás</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="container-button">
+                            <button type="button"><a href="second-step.html" target="_self">Anterior</a></button>
+                            <button type="submit">Finalizar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(styles/style-step-one.css) layer(antigo);
+@layer novo {
+    div#line-step-progression {
+        background-image: linear-gradient(white);
+    }
+    div.dois {
+        background-color: white;
+        color: black;
+    }
+}
+
+
+:root {
+    --shadow: 5px 5px 10px rgba(0, 0, 0, 0.196);
+    --fontmain: 'Roboto';
+    --colorgreen: #28AC5C;
+    --colorhover: #20924e;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #D8A169, #C19EBF);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    & #section-main {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: clamp(450px, 40vw, 1000px);
+        aspect-ratio: 1/1;
+
+        & .form-sec {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 75%;
+            aspect-ratio: 1/1;
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+            box-shadow: var(--shadow);
+            background-color: rgb(255, 248, 248);
+
+            & #form-sing {
+                width: 100%;
+                height: 100%;
+
+                fieldset {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+
+                    legend {
+                        display: block;
+                        width: 100%;
+                        padding-top: 5%;
+                        text-align: center;
+                        font-weight: 500;
+                        font-family: var(--fontmain);
+                        font-size: clamp(0.8rem, 1vw, 2rem);
+                    }
+
+                    p {
+                        padding-top: 10px;
+                        text-align: center;
+                        font: 400 clamp(0.8rem, 1vw, 2rem) var(--fontmain);
+                    }
+
+                    button {
+                        position: relative;
+                        left: 50%;
+                        transform: translate(-50%);
+                        height: clamp(35px, 35px + 1vw, 4vw);
+                        aspect-ratio: 3/1;
+                        text-shadow: var(--shadow);
+                        color: white;
+                        box-shadow: var(--shadow);
+                        font: 500 1rem var(--fontmain);
+                        border: none;
+                        background-color: var(--colorgreen);
+                        &:hover {
+                            background-color: var(--colorhover);
+                            cursor: pointer;
+                        }
+                    }
+
+                    .container-input {
+                        position: relative;
+                        width: 100%;
+                        height: 20%;
+                        margin-top: 4%;
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+
+                    .container-input > input, select {
+                        position: absolute;
+                        padding: clamp(10px, 1.5vw, 50px);
+                        width: 80%;
+                        left: 50%;
+                        transform: translate(-50%);
+                        background-color: rgba(255, 255, 255, 0);
+                        border: 1px solid rgb(90, 90, 90);
+                        appearance: none; 
+                        -webkit-appearance: none;
+                    }
+
+                    .container-input > input::-webkit-calendar-picker-indicator {
+                        position: relative;
+                        margin: 0;
+                        padding: 0;
+                        left: 0%;
+                    }
+
+                    .container-input > select {
+                        background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>');
+                        background-repeat: no-repeat;
+                        background-position: right 1.5vw center; 
+                        background-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
