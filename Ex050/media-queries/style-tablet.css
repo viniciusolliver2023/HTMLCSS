@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/back-tablet.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+
+    h1 {
+        font-size: 4rem;
+        &::after {
+            content: 'versão tablet';
+            font-size: 6rem;
+        }
+    }
+    
+    & #desktop-text {
+        display: none;
+    }
+}

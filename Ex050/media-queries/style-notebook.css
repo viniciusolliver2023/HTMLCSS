@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/back-pc.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    height: 85%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+
+    h1 {
+        font-size: 6rem;
+        &::after {
+            content: 'versão tablet';
+            font-size: 8rem;
+        }
+    }
+
+    & #desktop-text {
+        display: none;
+    }
+}

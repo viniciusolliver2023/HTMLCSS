@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="media-queries/style-tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="media-queries/style-notebook.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="media-queries/style-tv.css" media="screen and (min-width: 1200px)">
+    <title>Mobile First</title>
+</head>
+<body>
+    <main>
+        <h1>
+            <span>Visualização de</span>
+            <br>
+            <span>responsividade:</span>
+        </h1>
+        <span id="desktop-text">versão desktop</span>
+        <hr>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="imagens/icon-tv.png" type="image/png">
+            <source media="(min-width: 992px)" srcset="imagens/icon-pc.png" type="image/png">
+            <source media="(min-width: 768px)" srcset="imagens/icon-tablet.png" type="image/png">
+            <img src="imagens/icon-phone.png" alt="imagem de um telefone">
+        </picture>
+    </main>
+</body>
+</html>

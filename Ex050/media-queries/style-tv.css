@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/back-pc.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    height: 85%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+
+    h1 {
+        font-size: 6rem;
+        &::after {
+            content: '';
+        }
+    }
+
+    hr {
+        border: none;
+    }
+
+    img {
+        display: block;
+        width: 300px;
+    }
+
+    & #desktop-text {
+        display: inline-block;
+        font-size: 9rem;
+        font-weight: bolder;
+        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+        background-image: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 90%, rgba(255, 255, 255, 0) 90%);
+    }
+}
