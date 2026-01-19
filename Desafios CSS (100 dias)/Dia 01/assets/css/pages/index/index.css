@@ -1,0 +1,5 @@
+@charset "UTF-8";
+@import './partials/main-container.css';
+@import './partials/hundred.css';
+@import './partials/text-css.css';
+@import '../../global/global.css';

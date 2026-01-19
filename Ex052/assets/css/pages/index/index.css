@@ -1,0 +1,5 @@
+@import '../../global/global.css';
+@import url('../index/partials/media-queries/media-mobile.css') screen and (max-width: 425px);
+@import url('../index/partials/media-queries/media-tablet.css') screen and (min-width: 426px);
+@import url('../index/partials/media-queries/media-notebook.css') screen and (min-width: 910px);
+@import url('../index/partials/media-queries/media-desktop.css') screen and (min-width: 1025px);

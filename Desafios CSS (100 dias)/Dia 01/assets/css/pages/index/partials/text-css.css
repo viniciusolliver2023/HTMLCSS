@@ -1,0 +1,15 @@
+section {
+    & #days-text {
+        position: relative;
+        bottom: 20px;
+        font: var(--font-weight) 120px var(--font-main);
+        color: var(--color-font);
+    }
+
+    & #css-text {
+        position: relative;
+        bottom: 50px;
+        font: var(--font-weight) 33.6px var(--font-main);
+        color: var(--color-font);
+    }
+}

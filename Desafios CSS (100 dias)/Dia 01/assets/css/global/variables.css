@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+:root {
+    --font-main: 'Courier New', Courier, monospace;
+    --font-weight: bolder;
+    --color-font: white;
+}

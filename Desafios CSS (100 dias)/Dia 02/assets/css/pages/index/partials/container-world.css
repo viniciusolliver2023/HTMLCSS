@@ -1,0 +1,60 @@
+section {
+    & #container-div {
+
+        & #container-world {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-image: linear-gradient(#7DDFFC 70%,#F0DE75 70%);
+
+            & #sun {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                background-color: #FFEF00;
+            }
+
+            & #piramidy {
+                position: absolute;
+                top: 25px;
+                left: 50%;
+                width: 0px;
+                height: 0px;
+                transform: translate(-50%);
+                border-bottom: 80px solid #F0F0F0;
+                border-left: 70px solid transparent;
+                border-right: 70px solid transparent;
+                border-top: 70px solid transparent;
+                background-color: transparent;
+            }
+
+            & #piramidy-shadow {
+                position: absolute;
+                left: 35px;
+                top: 5px;
+                transform: translate(-50%, -50%);
+                border-bottom: 80px solid #e2e2e2;
+                border-left: 0px solid transparent;
+                border-right: 70px solid transparent;
+                border-top: 70px solid transparent;
+                background-color: transparent;
+            }
+        }
+
+        & #piramidy-shadow-floor {
+                position: absolute;
+                bottom: 20px;
+                left: 61%;
+                width: 70px;
+                transform: skew(45deg);
+                height: 55px;
+                background-color: #e3d16e;
+                clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 79% 65%, 75% 67%, 18% 100% );
+                z-index: 100;
+                
+            }
+    }
+}

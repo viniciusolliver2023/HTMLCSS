@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/index/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Formulário de Login</title>
+</head>
+<body>
+    <main>
+        <article>
+            <form action="index.html" method="post" autocomplete="on">
+                <div id="image-form"></div>
+                <fieldset>
+                    <legend>Login</legend>
+                    <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                    <div class="button-input input-type">
+                        <span class="material-icons">person</span>
+                        <input type="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="button-input input-type">
+                        <span class="material-icons">key</span>
+                        <input type="password" placeholder="Digite sua senha" minlength="10" required>
+                    </div>
+                    <div class="button-input button-submit">
+                        <button type="submit">Entrar</button>
+                    </div>
+                    <div class="button-input button-anchor">
+                        <a href="#" target="_blank" rel="noopener noreferrer">Esqueci a senha</a>
+                        <span class="material-icons" id="forgot-password">mail</span>
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

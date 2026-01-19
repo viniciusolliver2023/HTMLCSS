@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    font-size: 1rem;
+}
+
+main {
+
+    section {
+        width: 95%;
+        aspect-ratio: auto;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: white;
+
+        h1 {
+            font-size: min(5vw, 2.5rem);
+        }
+    }
+
+}

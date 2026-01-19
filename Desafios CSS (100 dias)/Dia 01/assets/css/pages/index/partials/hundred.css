@@ -1,0 +1,41 @@
+section {
+
+    & .hundred-text {
+        position: absolute;
+        bottom: 0px;
+        width: 25px;
+        margin-left: 0px;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    & .one-one {
+        height: 50px;
+        bottom: 90px;
+        left: -20px;
+        transform: rotate(50deg);
+    }
+    
+    & .one-two {
+        left: 0px;
+        height: 140px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+
+    & .zero {
+        border: 25px solid white;
+        width: 140px;
+        aspect-ratio: 1/1;
+        left: 20px;
+        border-radius: 100%;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 1;
+    }
+
+    & #zero-left {
+        z-index: -1;
+        left: 143px;
+    }
+}
