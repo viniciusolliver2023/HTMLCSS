@@ -17,6 +17,8 @@ main {
         width: 300px;
         height: 600px;
         transform: translate(-50%, -50%);
+        transition: width 2s ease-out;
+        
 
         form {
             width: 100%;
@@ -44,8 +46,8 @@ main {
                     width: 100%;
                     float: left;
                     margin-top: 25px;
-                    text-align: center;
                     margin-bottom: 25px;
+                    text-align: center;
                     font-weight: bolder;
                     font-size: min(10vw, 2.3rem);
                 }
